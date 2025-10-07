@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 import CardGrid from "./components/CardGrid";
 import AddEditModal from "./components/AddEditModal";

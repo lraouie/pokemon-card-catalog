@@ -3,7 +3,8 @@ import toast from "react-hot-toast";
 
 // Loader: fetch all cards from backend
 export async function loader() {
-  const res = await fetch("/api/cards");
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/api/cards`);
+
   if (!res.ok) throw new Error("Failed to fetch cards");
   const cards = await res.json();
   return { cards };
